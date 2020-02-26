@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logistic Regression</title>
+    <link rel="stylesheet" href="style.css" type="text/css"></head>
+
+<body>
+
+    <header>
+        <h1>Machine Learning</h1>
+        <h2>Logistic Regression</h2>
+        <nav role="navigation">
+            <ul>
+                <li><a href="intro.html" title="Introduction to Machine Learning">Introduction to Machine Learning</a></li>
+                <li><a href="linreg.html" title="Linear Regression">Linear Regression</a></li>
+                <li><a href="logreg.html" title="Logistic Regression">Logistic Regression</a></li>
+                <li><a href="nn.html" title="Neural Networks (Supervised)">Neural Networks (Supervised)</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <main>
+
+        <article>
+            
+            <p>
+                Logistic Regression uses the following function:  
+            </p>
+            
+            <img class="center" src="http://latex.codecogs.com/gif.latex?log_b\left\(\dfrac{p}{1-p}\right\)">
+            <p>
+                As stated in other pages, regression algorithms attempt to model the relationship between in independent and dependent variables. In the case of
+                <strong>logistic regression</strong> we do a regression to fit a binary classification.
+            </p>
+            
+            <img class="center" src="assets/LogisticRegression.gif" alt="Logistic Regression">
+
+            <p>
+                I did some research where we were trying to predict <strong>Student Success</strong>. The question was <strong>"Why do some students graduate and others dont?"</strong> To
+                try to answer this we looked at certain courses and investigated how big of an impact that course had in predicting whether a student would graduate. We found
+                that logistic regression was a very powerful tool and with the right feautres we were able to predict graduation with approximately 70% accuracy.  
+            </p>
+
+            <img src="assets/SAT VS GRAD.PNG" alt="SAT Score vs Graduation" class="center">
+
+            <p>
+                Using Logistic Regression we were able to see that an individual's SAT score was a <strong>terrible</strong> predictor of <strong>Student Success</strong>. 
+            </p>
+
+        </article>
+    </main>
+
+    <footer>
+        &copy; 2020 Jorge Martinez
+    </footer>
+
+
+</body>
+
+</html>

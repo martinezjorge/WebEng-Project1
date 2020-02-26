@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linear Regression</title>
+    <link rel="stylesheet" href="style.css" type="text/css"></head>
+
+<body>
+    <header>
+        <h1>Machine Learning</h1>
+        <h2>Linear Regression</h2>
+        <nav role="navigation">
+            <ul>
+                <li><a href="intro.html" title="Introduction to Machine Learning">Introduction to Machine Learning</a></li>
+                <li><a href="linreg.html" title="Linear Regression">Linear Regression</a></li>
+                <li><a href="logreg.html" title="Logistic Regression">Logistic Regression</a></li>
+                <li><a href="nn.html" title="Neural Networks (Supervised)">Neural Networks (Supervised)</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <main>
+        <article>
+
+            <p>
+                In general, regressions attempt to model a phenomena with a function the explains the relationship between independent and dependant 
+                variables. They can be used to model a variety of equations, not just linear but on this page we'll focus on linear which will look 
+                like this: 
+            </p>
+
+            <img class="center" src="http://latex.codecogs.com/gif.latex?f(x)=mx+b" border="0"/>
+
+            <p>
+                Anyone whose taken a chemistry, biology, or statistics class might be familiar with <strong>Linear Regression!</strong> It's what is used
+                to caculate an equation that generalizes your experimental results to points that you may not have in your data set. If you use it to predict
+                points outside of your data's range then that is called extrapolation. If you use the equation to predict values within your data range but 
+                for values that are not in the data set then that is called interpolation. A lot of really cool techniques have their foundation in a simple
+                linear regression.
+            </p>
+
+            <p>
+                In the case of linear regression we are explicitly trying to model the relationship between an dependant variable, <strong>y</strong>, 
+                and an independent variable <strong>x</strong>.
+            </p>
+
+            <img class="center_with_percent" src="assets/LinearRegression.gif" alt="Linear Regression">
+
+            <p>
+                Looking at the scatter plot we can infer that the dataset came from plugging in values into a sine function and adding a little noise
+                to the final values before plotting so that the points aren't exactly along a sine wave line. We can also see that mapping it with a
+                linear function will result in error because sinewaves and straight lines are very different. So I guess that means there's nothing we 
+                can do and we should just got home and call it a day...
+
+                Well actually! There are more advanced techniques that will allow us better estimate non-linear phenomena.
+            </p>
+
+            <img class="center_with_percent" src="assets/PolynomialRegression.gif" alt="Polynomial Regression">
+
+            <p>
+                The above graph shows the same dataset being modeled with a polynomial regression. With enough terms Quadratic functions allow us to 
+                model a great many shapes. Somewhat similar to Fourier Series being used to create an shape with circles.
+            </p>
+
+        </article>
+    </main>
+
+    <footer>
+        &copy; 2020 Jorge Martinez
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introduction to Machine Learning</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+</head>
+
+<body>
+    <header role="banner">
+        <h1>Machine Learning</h1>
+        <h2>Introduction to Machine Learning</h2>
+        <nav role="navigation">
+            <ul>
+                <li><a href="intro.html" title="Introduction to Machine Learning">Introduction to Machine Learning</a></li>
+                <li><a href="linreg.html" title="Linear Regression">Linear Regression</a></li>
+                <li><a href="logreg.html" title="Logistic Regression">Logistic Regression</a></li>
+                <li><a href="nn.html" title="Neural Networks (Supervised)">Neural Networks (Supervised)</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <article>
+
+            <img src="assets/coolGif.gif" alt="cool gif" class="flowLeft">
+            <p> 
+                Since the very first computer was created, scientists dreamed of being able to have computers act autonomously. 
+                They hoped that with the power of computing they would be able to create <strong>Artificial Intelligence</strong>
+                and all the world's problems would be solved. 
+            </p>
+            
+            <p>                
+                Unfortunately, it wasn't as simple as giving a computer with a lot of processing power a bunch of data. In 1957, 
+                when computers were finally available to scientists for the first time, one of the first things they attempted was 
+                to get a mainframe, Illiac I, to compose a symphony.
+            </p>
+
+
+            <p>    
+                Two scientists, Lejaren Hiller and Leonard Issacson programmed the Illiac I using a mathematical algorithm to compose
+                the <a href="https://www.youtube.com/watch?v=fojKZ1ymZlo">world's first symphony written by A.I.</a>, "Illiac Suite for 
+                String Quartet." It's a little hard to listen to it but it was a very interesting first attempt. I would give definitely
+                give more credit to scientists than to the Illiac I which composed the music procedurally based on rules rather than 
+                learning the rules on its own. I would consider <a href="https://www.youtube.com/watch?v=UWxfnNXlVy8">CodeParade's "Neural Composer"</a> 
+                much closer to what Hiller and Issacson envisioned in the 1950s. CodeParade used <strong>recurrent neural networks</strong> 
+                and <strong>principle component analysis</strong> to develop a model that leverages modern NLP and Reinforcement Learning
+                techniques to generate video game music. Why does it generate video game music? Because it was trained on video game music!
+            </p>
+            
+            <img src="assets/MLDiagram.png" alt="Machine Learning Diagram" class="flowRight">
+
+            <p> 
+                <strong>Machine Learning</strong> is a field of Computer Science that allows computers to accomplish tasks without
+                being explicitly programmed for that task. However, that is not to say that the computers don't have to be programmed 
+                at all. In fact, there are many different algorithms that have been developed for different use cases. The expectation is 
+                that once the algorithm has been implemented by continually iterating over data the computer will be able to make a model
+                that over time will improve performance at its given task.
+            </p>
+
+            
+            <p>
+                Machine learning can be split into three different areas:
+
+                <ol>
+                    <li>
+                        <strong>Supervised Learning</strong>
+                        <p>
+                            In supervised learning, the algorithms might try to predict or classify something and we'll actually have a source of
+                            truth that the algorithm will be able to cross reference to be able to validate whether it was right or wrong and make
+                            better predictions the next time.
+                        </p>
+                        <p>
+                            Algorithms:
+                            <ul>
+                                <li>Linear Regression</li>
+                                <li>Polynomial Regression</li>
+                                <li>Logistic Regression</li>
+                                <li>Neural Networks (Supervised Style)</li>
+                            </ul>
+                        </p>
+                    </li>
+
+                    <li>
+                        <strong>Unsupervised Learning</strong>
+                        <p>
+                            Unsupervised Learning is a bit more magical. We might have a set of data with a lot of features but we might not know which
+                            features are the most important so we have an unsupervised algorithm analyze the data and provide us with clusters of the data
+                            that it thinks are similar. It maybe used a cartesian system where it uses an Euclidean distance to compute how far apart data 
+                            points are from one another. 
+                        </p>
+    
+                        <p>
+                            Algorithms:
+                            <ul>
+                                <li>K-means Clustering</li>
+                                <li>Principle Component Analysis</li>
+                                <li>Autoencoders</li>
+                                <li>Singular Value Decomposition</li>
+                            </ul>
+                        </p>
+                    </li>
+
+                    <li>
+                        <strong>Reinforcement Learning</strong>
+                        <p>
+                            This one is my favorite. Here we use algorithms that take actions at a state in an environment which produces a positive
+                            or negative reward for taking that action and puts them in another state where it can proceed to take another action until
+                            either it achieves its objective or fails to do so. Whether it succeeds or fails it try to make decisions that maximize
+                            the future sum of discounted rewards. This may be why chess playing models trained in this fashion that can be so aggressively 
+                            efficient.
+                        </p>
+    
+                        <p>
+                            Algorithms:
+                            <ul>
+                                <li>Q-Learning</li>
+                                <li>Deep Q-Network</li>
+                                <li>Deep Determenistic Policy Gradient</li>
+                                <li>Proximal Policy Optimization</li>
+                            </ul>
+                        </p>
+                    </li>
+                </ol>
+
+                At least for now, I'll only go over Supervised Learning algorithms but in the future I might expand this to be a more comprehensive set of pages
+                and maybe refactor it into various tutorials. Even if I don't publish this I might be able to use them as references for myself or simply to
+                reinforce my knowledge.
+            </p>
+
+        </article>
+
+    </main>
+
+    <footer>
+        &copy; 2020 Jorge Martinez
+    </footer>
+</body>
+
+</html>
