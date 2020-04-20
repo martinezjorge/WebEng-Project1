@@ -73,6 +73,7 @@ function functionAlert(msg) {
     // confirmBox.find(".yes").click(myYes);
     confirmBox.show();
 }
+
 function checkWeightAndHappinessBeforeUpdating() {
     // Add conditional so if weight is lower than zero, set it back to zero
     if (pet_info.weight < 1) {
