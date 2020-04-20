@@ -9,7 +9,6 @@ $(function () { // Makes sure that your function is called once all the DOM elem
     $('.exercise-button').click(clickedExerciseButton);
     $('.rest-button').click(clickedRestButton);
 
-
 })
 
 // Add a variable "pet_info" equal to a object with the name (string), weight (number), and happiness (number) of your pet
@@ -65,14 +64,37 @@ function checkAndUpdatePetInfoInHtml() {
     updatePetInfoInHtml();
 }
 
+function functionAlert(msg) {
+    var confirmBox = $("#confirm");
+    confirmBox.find(".message").text(msg);
+    confirmBox.find(".yes").unbind().click(function() {
+       confirmBox.hide();
+    });
+    // confirmBox.find(".yes").click(myYes);
+    confirmBox.show();
+}
 function checkWeightAndHappinessBeforeUpdating() {
     // Add conditional so if weight is lower than zero, set it back to zero
     if (pet_info.weight < 1) {
         pet_info.weight = 1;
+        functionAlert("Bulbasaur needs to eat!");
+    } else if (pet_info.weight > 100){
+        functionAlert("Looks like Bulbasaur might need some exercise.");
     }
 
     if (pet_info.energy > 100){
         pet_info.energy = 100;
+        functionAlert("Bulbasaur is raring to go!");
+    } else if (pet_info.energy <= 0){
+        pet_info.energy = 1;
+        functionAlert("Bulbasaur needs some rest.");
+    }
+
+    if (pet_info.happiness > 100){
+        functionAlert("Bulbasaur really seems to like you!");
+    } else if (pet_info.happiness <= 1){
+        pet_info.happiness = 1;
+        functionAlert("Bulbasaur seems sad, you should really play with it!");
     }
 }
 
